@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *,
+        html {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            background-color: white;
+        }    
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="./images/logo.png" alt="logo" id="logo">
+        <ul id="menu">
+            <a href="index.html">
+                <li>home</li>
+            </a>
+            <a href="paris.html">
+                <li>paris</li>
+            </a>
+            <a href="newyork.html">
+                <li>newyork</li>
+            </a>
+            <a href="about.html">
+                <li>about</li>
+            </a>
+            <a href="contact.html">
+                <li style="color: yellowgreen;">contact</li>
+            </a>
+        </ul>
+
+        <h1 class="Requestform">Request Form</h1>
+        <form method="post" action="https://www.freecodecamp.org/">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" :required>
+            <br>
+
+            <label for="Email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" :required>
+            <br>
+            <p>Do you plan to travel soon?</p>
+<br>
+            <input class="radio" type="radio" name="option" id="yes" value="yes">
+            <label for="Yes"> Yes</label>
+            <input class="radio" type="radio" name="option" id="no" value="no">
+            <label for="No"> No</label>
+            <br>
+            <br>
+
+            <p>Do you have these?</p>
+            <div class="row">
+            
+            <label for="Passport">Passport&ensp;</label><input class="checkbox" type="checkbox" name="category" id="passport" value="passport"></div>
+           <div class="row">
+           <label for="Nexus">Nexus&ensp;&ensp;&nbsp;&nbsp;</label> <input type="checkbox" class="checkbox" name="category" id="Nexus" value="Nexus"></div>
+            <br>
+            <!-- <br> -->
+            <label for="Select-menu">Which place do you want to visit?</label>
+            <Select class="select" name="Select-menu" id="select-menu">
+                <option value=" ">Choose...</option>
+                <option value="1">Eiffel Tower</option>
+                <option value="2">Louvre Museum</option>
+                <option value="3">Manhattan</option>
+                <option value="4">Empire State Building</option>
+                <option value="5">Ithaca</option>
+            </select>
+            <br>
+            <br>
+            <textarea id="message" name="message" placeholder="Enter your message here" required></textarea>
+    <br>
+    <button class = "submit" type = "submit">Send</button>
+    <button class = "reset" type= "reset">Reset</button>
+
+        </form>
+    </div>
+    /* <footer>copyright &copy; 2023 Dreamweaver Course</footer> */
+</body>
+
+</html>
